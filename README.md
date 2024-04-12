@@ -1,2 +1,2 @@
 # Task-Management
-Full stacl project for Task Management
+Full stack project for Task Management
