@@ -16,11 +16,11 @@ import com.taskmanagement.Submission.Service.dto.TaskDTO;
 public interface TaskService {
 	
 	@GetMapping("/api/task/{id}")
-	public ResponseEntity<TaskDTO> getTaskId(@PathVariable Long id,
+	public TaskDTO getTaskId(@PathVariable Long id,
 			@RequestHeader("Authorization") String jwt) throws Exception;
 	
 	@PutMapping("/api/tasks/{id}/complete")
-	public ResponseEntity<TaskDTO> completeTask(
+	public TaskDTO completeTask(
 	@PathVariable Long id) throws Exception;
 
 }
