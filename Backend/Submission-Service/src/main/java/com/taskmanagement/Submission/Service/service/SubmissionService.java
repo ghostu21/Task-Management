@@ -6,7 +6,7 @@ import com.taskmanagement.Submission.Service.model.Submission;
 
 public interface SubmissionService {
 	
-	Submission submitTask(Long taskId, String githublink, Long userId)throws Exception;
+	Submission submitTask(Long taskId, String githublink, Long userId,String jwt)throws Exception;
 	
 	Submission getTaskSubmissionById(Long submissionId) throws Exception;
 	

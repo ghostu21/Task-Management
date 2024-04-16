@@ -11,9 +11,13 @@ public class SubmissionServiceImpl implements SubmissionService {
 
 	@Autowired
 	private SubmissionRepository submissionRepository;
+	@Autowired
+	private TaskService taskService;
+	
+	private UserService userService;
 	
 	@Override
-	public Submission submitTask(Long taskId, String githublink, Long userId) throws Exception {
+	public Submission submitTask(Long taskId, String githublink, Long userId,String jwt) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}
