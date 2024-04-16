@@ -87,7 +87,7 @@ public class UserServiceImpl implements UserService {
 		// Assign default role to user
 //		Role defaultRole = new Role(UserRole.ROLE_USER.id, UserRole.ROLE_USER.name()); // Assuming you have a method to
 																						// find role by name
-		user.setRole("ROLE_USER");
+		user.setRole(userDTO.getRole().name());
 
 		userRepository.save(user);
 
@@ -140,6 +140,7 @@ public class UserServiceImpl implements UserService {
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
 
 		userResponse.setEmail(user.getEmail());
+		userResponse.setUserId(user.getId());
 //		userResponse.setMobile(user.getMobile());
 //		userResponse.setUserName(user.getUserName());
 		userResponse.setName(user.getFullName());

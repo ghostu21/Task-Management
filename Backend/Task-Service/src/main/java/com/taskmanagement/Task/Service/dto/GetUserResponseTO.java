@@ -1,6 +1,9 @@
 package com.taskmanagement.Task.Service.dto;
 
+
 public class GetUserResponseTO {
+	
+	private Long userId;
 	
 	private String email;
 
@@ -35,6 +38,16 @@ public class GetUserResponseTO {
 	public void setRole(String role) {
 		this.role = role;
 	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+	
+	
 
 
 }

@@ -3,7 +3,7 @@ package com.taskmanagement.User.Service.dto;
 
 public class GetUserResponseTO {
 
-
+	private Long userId;
 	private String email;
 
 	private String name;
@@ -36,6 +36,14 @@ public class GetUserResponseTO {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	

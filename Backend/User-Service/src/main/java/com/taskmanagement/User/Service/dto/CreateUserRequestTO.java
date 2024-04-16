@@ -1,6 +1,6 @@
 package com.taskmanagement.User.Service.dto;
 
-
+import com.taskmanagement.User.Service.constant.UserRole;
 
 public class CreateUserRequestTO {
 
@@ -10,6 +10,8 @@ public class CreateUserRequestTO {
 
 
 	private String name;
+	
+	private UserRole role;
 
 
 	// Getters and setters
@@ -40,6 +42,14 @@ public class CreateUserRequestTO {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public UserRole getRole() {
+		return role;
+	}
+
+	public void setRole(UserRole role) {
+		this.role = role;
 	}
 
 
