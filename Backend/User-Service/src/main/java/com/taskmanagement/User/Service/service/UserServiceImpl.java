@@ -144,6 +144,7 @@ public class UserServiceImpl implements UserService {
 //		userResponse.setUserName(user.getUserName());
 		userResponse.setName(user.getFullName());
 //		userResponse.setDob(formatter.format(user.getDob()));
+		userResponse.setRole(user.getRole());
 
 		return userResponse;
 

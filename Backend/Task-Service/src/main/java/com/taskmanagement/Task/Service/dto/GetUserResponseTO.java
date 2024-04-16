@@ -1,9 +1,7 @@
-package com.taskmanagement.User.Service.dto;
-
+package com.taskmanagement.Task.Service.dto;
 
 public class GetUserResponseTO {
-
-
+	
 	private String email;
 
 	private String name;
@@ -38,8 +36,5 @@ public class GetUserResponseTO {
 		this.role = role;
 	}
 
-	
-
-	
 
 }
